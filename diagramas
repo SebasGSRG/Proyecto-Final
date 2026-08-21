@@ -1,1 +1,55 @@
+INICIO
+  ↓
+Inicializar Pygame
+  ↓
+Mostrar menú
+  ↓
+┌─────────────────┐
+│ ¿Qué selecciona?│
+└────────┬────────┘
+     ┌───┼───────┐
+     ↓   ↓       ↓
+   JUGAR MARCADORES SALIR
+     ↓     ↓       ↓
+   PARTIDA HISTORIAL FIN
+     ↓
+ ¿Alguien llega a 5?
+     ↓
+   Guardar resultado
+     ↓
+ Mostrar ganador
+     ↓
+ Volver al menú
 
+
+
+                    ┌──────────────────────┐
+                    │      ATARI PONG      │
+                    │                      │
+Jugador ───────────►│ Iniciar partida      │
+Jugador ───────────►│ Jugar partida        │
+Jugador ───────────►│ Consultar marcadores │
+Jugador ───────────►│ Salir del programa   │
+                    │                      │
+                    └──────────────────────┘
+
+
+
+
+                    ┌─────────────┐
+                    │   main.py   │
+                    │ Controlador │
+                    └──────┬──────┘
+                           │
+             ┌─────────────┼─────────────┐
+             ↓             ↓             ↓
+       ┌──────────┐  ┌──────────┐  ┌──────────┐
+       │ menu.py  │  │ game.py  │  │scores.py │
+       │  Menú    │  │  Juego   │  │Marcadores│
+       └──────────┘  └─────┬────┘  └────┬─────┘
+                           │             │
+                           ↓             ↓
+                     ┌──────────┐  ┌──────────────┐
+                     │config.py │  │resultados.json│
+                     │Configur. │  │  Datos        │
+                     └──────────┘  └──────────────┘
